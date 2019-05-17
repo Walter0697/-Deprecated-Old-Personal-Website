@@ -4,7 +4,7 @@ var repos = "none";
 document.addEventListener("DOMContentLoaded", function(event) { 
 	//fetching information from github
 	//just for a few data, why not
-	fetch("https://api.github.com/repos/Walter0697/Personal-Website")
+	fetch("https://api.github.com/repos/Walter0697/PersonalWebsite")
 	.then(response => response.json())
 	.then(data => {
 		updateTime = data.updated_at;
