@@ -1,0 +1,95 @@
+.titleFont {
+	font-family: 'Righteous', cursive;
+	font-size: 50px;
+	margin-bottom: 40%;
+}
+
+.titleMobileFont {
+	font-family: 'Righteous', cursive;
+	background-color: #87CEEB;
+	border-bottom: 3px dotted #FFF;
+	box-shadow: inset 0 -1px 0 0 #FFF, inset 0 1px 0 0 #FFF, 0 1px 0 0 #FFF, 0 1px 0 0 #FFF;
+	z-index: 10;
+}
+
+.bottomMobileText {
+	font-family: 'Righteous', cursive;
+	font-size: 30px;
+	color: white;
+}
+
+.cloudWord {
+	font-family: 'Righteous', cursive;
+	font-size: 35px;
+	margin-top: 2%;
+	text-align: center;
+	color: black;
+}
+
+.cloudMobileWord {
+	font-family: 'Righteous', cursive;
+	font-size: 10px;
+	margin-top: 2%;
+	text-align: center;
+	color: black;
+}
+
+.mobileIconSize {
+	font-size: 30px;
+}
+
+.buttonFont {
+	font-family: 'Righteous', cursive;
+	font-size: 35px;
+	color: white;
+}
+
+.mobileButtonFont {
+	font-family: 'Righteous', cursive;
+	font-size: 10px;
+	color: white;
+}
+
+.ontop {
+	margin-top: 0%;
+	margin-bottom: 180%;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+a:link {
+	color: white;
+}
+
+#icon {
+	margin-bottom: 5%;
+}
+
+#arrow {
+	margin-bottom: 10%;
+	-webkit-animation: arrow_mover 0.8s ease infinite;
+	-moz-animation: arrow_mover 0.8s ease infinite;
+	animation: arrow_mover 0.8s ease infinite;
+}
+
+@-webkit-keyframes arrow_mover{
+ 0%{transform: translateY(-5px);}
+ 50%{transform: translateY(5px);}
+100%{transform: translateY(-5px);}
+}
+@-moz-keyframes arrow_mover{
+ 0%{transform: translateY(-5px);}
+ 50%{transform: translateY(5px);}
+100%{transform: translateY(-5px);}
+}
+@keyframes arrow_mover{
+ 0%{transform: translateY(-5px);}
+ 50%{transform: translateY(5px);}
+100%{transform: translateY(-5px);}
+}

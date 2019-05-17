@@ -1,0 +1,26 @@
+.wholeScreen {
+	width: 100%;
+	height: 100%;
+	background: black;
+	color: white;
+}
+
+.fontStyle {
+	font-family: 'Righteous', cursive;
+	font-size: 20px;
+	border-radius: 25px;
+}
+
+.smallFontStyle {
+	font-family: 'Righteous', cursive;
+	font-size: 15px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+input {
+	border-width: 0px;
+	border: none;
+}

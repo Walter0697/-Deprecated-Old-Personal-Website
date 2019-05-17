@@ -1,0 +1,20 @@
+.centerDiv {
+	position: fixed;
+	font-family: 'Righteous', cursive;
+	background: #DDDDDD;
+	color: white;
+	border-radius: 20px;
+	box-shadow: 5px 10px #888888;
+}
+
+.svgicon {
+	fill: #fff;
+}
+
+.extraicon {
+	fill: #666;
+}
+
+.fontStyleAdjust {
+	font-family: 'Righteous', cursive;
+}
