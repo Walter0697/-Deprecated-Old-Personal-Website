@@ -6,9 +6,6 @@ import ReactTooltip from 'react-tooltip';
 //importing css
 import '../css/home.css';
 
-//importing file
-import ResumePDF from '../file/waltercheng.pdf';
-
 //get all the images
 import avator from '../sprite/homepage/avator.svg';
 import bottomBackground from '../sprite/homepage/background.png';
@@ -340,7 +337,7 @@ export default class HomePage extends React.Component {
 						offset={1.2}
 						speed={0.2}
 						style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '23%', marginLeft: '8%' }}
-						onClick={this.redirectOut.bind(this, ResumePDF)}
+						onClick={this.redirectOut.bind(this, '/static/waltercheng.pdf')}
 						data-tip="Click to view!">
 						<ReactTooltip />
 					</ParallaxLayer>
@@ -578,9 +575,8 @@ export default class HomePage extends React.Component {
 					offset={1.8}
 					speed={0.2}
 					style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '23%', marginLeft: '8%' }}
-					onClick={this.redirectOut.bind(this, ResumePDF)}
+					onClick={this.redirectOut.bind(this, '/static/waltercheng.pdf')}>
 					data-tip="Click to view!">
-					<ReactTooltip />
 				</ParallaxLayer>
 				
 				<ParallaxLayer

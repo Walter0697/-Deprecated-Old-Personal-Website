@@ -11,7 +11,6 @@ import Robot				from './page/Robot';
 import Projects				from './page/Projects';
 import MobileProjectPage 	from './page/Projectsm.js';
 import Numbers				from './page/Numbers.js';
-import PdfViewer			from './page/PdfViewer.js';
 
 class App extends Component {
   render() {
@@ -24,7 +23,6 @@ class App extends Component {
 			<Route exact path="/Q34T6" render={props => ( <Robot /> )} />
 			<Route exact path="/m_projects" render={props => <MobileProjectPage />} />
 			<Route exact path="/numbers" render={props => <Numbers />} />
-			<Route exact path="/resume" render={props => <PdfViewer />} />
 		</Switch>
 	  </Router>
     );
