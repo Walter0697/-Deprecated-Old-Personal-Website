@@ -7,7 +7,7 @@ import ReactTooltip from 'react-tooltip';
 import '../css/home.css';
 
 //importing file
-import Res from '../file/waltercheng.pdf';
+import ResumePDF from '../file/waltercheng.pdf';
 
 //get all the images
 import avator from '../sprite/homepage/avator.svg';
@@ -327,7 +327,7 @@ export default class HomePage extends React.Component {
 						speed={0.2}
 						style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '50%', marginLeft: '25%'}}
 						onClick={this.redirectOut.bind(this, "/projects")}
-						data-tip="I just have to finish this right now!">
+						data-tip="Currently in my old website!">
 						<ReactTooltip />
 					</ParallaxLayer>
 					<ParallaxLayer
@@ -340,7 +340,7 @@ export default class HomePage extends React.Component {
 						offset={1.2}
 						speed={0.2}
 						style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '23%', marginLeft: '8%' }}
-						onClick={this.redirectOut.bind(this, Res)}
+						onClick={this.redirectOut.bind(this, ResumePDF)}
 						data-tip="Click to view!">
 						<ReactTooltip />
 					</ParallaxLayer>
@@ -565,7 +565,7 @@ export default class HomePage extends React.Component {
 					speed={0.2}
 					style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40%', marginLeft: '45%'}}
 					onClick={this.redirectOut.bind(this, "http://www.waltercheng.com:3000#resume")}
-					data-tip="I just have to finish this right now!">
+					data-tip="Currently in my old website!">
 					<ReactTooltip />
 				</ParallaxLayer>
 				<ParallaxLayer
@@ -578,7 +578,7 @@ export default class HomePage extends React.Component {
 					offset={1.8}
 					speed={0.2}
 					style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '23%', marginLeft: '8%' }}
-					onClick={this.redirectOut.bind(this, Res)}
+					onClick={this.redirectOut.bind(this, ResumePDF)}
 					data-tip="Click to view!">
 					<ReactTooltip />
 				</ParallaxLayer>
