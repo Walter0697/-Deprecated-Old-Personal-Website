@@ -27,6 +27,7 @@
 
 ## Reminder for myself:
 - using multiple animation libraries for different pages seem like a fun idea
+- Need to figure out a way to render pdf
 - Mobile Project page can't show info right now, might implement later
 - what exactly can i do for resume webpage, let's think
 - what's next?
