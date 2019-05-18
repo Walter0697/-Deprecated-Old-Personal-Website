@@ -323,7 +323,7 @@ export default class HomePage extends React.Component {
 						offset={1.2}
 						speed={0.2}
 						style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '50%', marginLeft: '25%'}}
-						onClick={this.redirectOut.bind(this, "/projects")}
+						onClick={this.redirectOut.bind(this, "www.waltercheng.com:3000/#resume")}
 						data-tip="Currently in my old website!">
 						<ReactTooltip />
 					</ParallaxLayer>
@@ -575,7 +575,7 @@ export default class HomePage extends React.Component {
 					offset={1.8}
 					speed={0.2}
 					style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '23%', marginLeft: '8%' }}
-					onClick={this.redirectOut.bind(this, '/static/waltercheng.pdf')}>
+					onClick={this.redirectOut.bind(this, '/static/waltercheng.pdf')}
 					data-tip="Click to view!">
 				</ParallaxLayer>
 				

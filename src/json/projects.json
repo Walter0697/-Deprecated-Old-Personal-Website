@@ -132,7 +132,7 @@
 		"name":"waltercheng.com",
 		"short":"waltercheng",
 		"image":"waltercheng.png",
-		"github":"https://github.com/Walter0697/Personal-Website",
+		"github":"https://github.com/Walter0697/PersonalWebsite",
 		"technology":["JavaScript", "Reactjs", "Bootstrap", "Shell Script", "React-Spring", "Animejs", "Airtable", "Nginx"],
 		"description":[	"A website that shows most of my projects and experiences",
 						"way to study more technologies, using multiple animation libraries",
