@@ -20,7 +20,7 @@ class App extends Component {
 			<Route exact path="/" render={props => ( <HomePage /> )} />
 			<Route exact path="/projects" render={props => (<Projects /> )} />
 			<Route exact path="/test" render={props => ( <TestPage /> )} />
-			<Route exact path="/Q34T6" render={props => ( <Robot /> )} />
+			<Route exact path="/Q23T6" render={props => ( <Robot /> )} />
 			<Route exact path="/m_projects" render={props => <MobileProjectPage />} />
 			<Route exact path="/numbers" render={props => <Numbers />} />
 		</Switch>
