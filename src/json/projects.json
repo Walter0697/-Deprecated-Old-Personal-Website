@@ -15,6 +15,7 @@
 					"All Tools Unlocked Version":"ImitatorUnlock.zip"},
 		"extra":"Some computers may need to download Visual C++ Redistibutable in order to run this game, click here",
 		"extralink": "https://www.microsoft.com/en-us/download/details.aspx?id=48145",
+		"screenshot":["it003.gif", "it001.gif", "it002.png"],
 		"type":"Games",
 		"index":"3"
 	},
@@ -30,6 +31,7 @@
 		"youtube":"https://www.youtube.com/watch?v=xD4k4IEFl0g",
 		"download":{"Download here: ":"https://play.google.com/store/apps/details?id=com.team206255.dineder"},
 		"type":"Mobile",
+		"screenshot":["dd003.gif", "dd001.png", "dd002.png"],
 		"group":"Yes",
 		"index":"5"
 	},
@@ -45,6 +47,7 @@
 		"description":[	"A fast 1v1 game about two pizza guy fighting for which topping is the best",
 						"One of the honour mention in this Game Jam",
 						"Group project with Thomas Fix, Roberto Buelvas and Lorenzo Carrara"],
+		"screenshot":["pr003.gif", "pr001.png", "pr002.png"],
 		"type":"Hackathon",
 		"group":"Yes",
 		"index":"7"
@@ -60,6 +63,7 @@
 		"download":{"Download here: ":"Music-Shooter.zip"},
 		"extra":"Some computers may need to download Visual C++ Redistibutable in order to run this game, click here",
 		"extralink": "https://www.microsoft.com/en-us/download/details.aspx?id=48145",
+		"screenshot":["ms003.gif", "ms002.png", "ms001.png"],
 		"type":"Games",
 		"index":"2"
 	},
@@ -73,6 +77,7 @@
 						"This is a coding practice gmae that based on the game rule of a mobile app game : BBTAN from 111%",
 						"I also added more tools and different setting in order to make the game funnier"],
 		"download":{"Download here: ":"Ball-Game-windows.zip"},
+		"screenshot":["bg003.gif", "bg002.png", "bg001.png"],
 		"type":"Games",
 		"index":"1"
 	},
@@ -85,6 +90,7 @@
 		"description":[	"Built with OpenGL using MVC architecture",
 						"Flying Undersized Controlled Killer is a game about a fly who is trying to kill human with his ability. The fly can split on different enemies and eliminate them but it would be more difficult for it to do that with human. Therefore, it will need to take a block from the ground and drop above the human.",
 						"Group project with Mohamed Kazma and Jeremy Melone"],
+		"screenshot":["fg001.png"],
 		"type":"Games",
 		"group":"Yes",
 		"index":"4"
@@ -100,6 +106,7 @@
 					 "devpost":"https://devpost.com/software/scweconuhacks3"},
 		"description":[	"To assist ESL students or other second language students by analysising youtube videoes and find out the most common vocabulary spoken there",
 						"Group project with Cheldon Mahon, Esraa Saleh and Sahil Kapal"],
+		"screenshot":["vj002.gif", "vj001.png"],
 		"type":"Hackathon",
 		"group":"Yes",
 		"youtube":"https://www.youtube.com/watch?v=beVJbZg8xCA",
@@ -114,6 +121,7 @@
 		"description":[	"Classic Connect Four game implemented in Unity",
 						"Created my own 3d model for this game",
 						"Using MiniMax Tree Search with Alpha-Beta pruning to optimize the efficiency."],
+		"screenshot":["cf003.gif", "cf001.png", "cf002.png"],
 		"type":"Games",
 		"index":"8"
 	},
@@ -124,7 +132,9 @@
 		"github":"https://github.com/Walter0697/BunnyChessGame",
 		"technology":["C#", "Unity"],
 		"description":[	"Traditional Senet game implemented in Unity",
+						"Rules are according to https://www.cs.brandeis.edu/~storer/JimPuzzles/GAMES/Senet/Senet.pdf",
 						"It is just cute therefore I want to put it here"],
+		"screenshot":["bs003.gif", "bs001.png", "bs002.png"],
 		"type":"Games",
 		"index":"9"
 	},
@@ -137,6 +147,7 @@
 		"description":[	"A website that shows most of my projects and experiences",
 						"way to study more technologies, using multiple animation libraries",
 						"Will keep updating!"],
+		"screenshot":["wc001.gif"],				
 		"type":"Webs",
 		"index":"10"
 	}

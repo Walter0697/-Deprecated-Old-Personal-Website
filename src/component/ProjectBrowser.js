@@ -1,7 +1,7 @@
 import React from "react";
 import ReactTooltip from 'react-tooltip';
 
-import { getProjectImage } from '../component/imageParser.js';
+import { getProjectImage, getScreenShot } from '../component/imageParser.js';
 import '../css/component.css';
 
 import Card from 'react-bootstrap/Card';
@@ -85,9 +85,18 @@ function getExtraInfo(data) {
 		for (key in data.download)
 		{
 			iconData = getTechnology("download");
-			currentdiv = <a href={zipfile[data.download[key]]} display="block" style={{ color: "#666"}} key={key}>{key} :&nbsp;&nbsp;&nbsp;
-				{getIcon(iconData, "15px", "extraicon")}
-			<br/></a>;
+			if (zipfile[data.download[key]])
+			{
+				currentdiv = <a href={zipfile[data.download[key]]} display="block" style={{ color: "#666"}} key={key}>{key} :&nbsp;&nbsp;&nbsp;
+					{getIcon(iconData, "15px", "extraicon")}
+				<br/></a>;
+			}
+			else
+			{
+				currentdiv = <a href={data.download[key]} display="block" style={{ color: "#666"}} key={key}>{key} :&nbsp;&nbsp;&nbsp;
+					{getIcon(iconData, "15px", "extraicon")}
+				<br/></a>;
+			}
 			allExtra.push(currentdiv);
 		}
 	}
@@ -97,6 +106,17 @@ function getExtraInfo(data) {
 		allExtra.push(currentdiv);
 	}
 	return allExtra;
+}
+
+function getAllScreenShot(data) {
+	let allScreenShot = [];
+	var key, currentdiv;
+	for (key in data.screenshot)
+	{
+		currentdiv = <Card.Img style={{ width: '30%', textAlign: 'center' }} variant="top" src={getScreenShot(data.screenshot[key])} />;
+		allScreenShot.push(currentdiv);
+	}
+	return allScreenShot;
 }
 
 function getAllDescription(data){
@@ -148,15 +168,23 @@ function getOutputDiv(data)
 							</Col>
 						</Row>
 					</Container>
-					
-					
+						
 					<Card.Body style={{ textAlign: 'left' }} >
-						<Card.Title style={{ fontSize: '30px'}} className="fontStyleAdjust">{data.name}</Card.Title>
-						{getSourceInfo(data)}
-						<br/>
-						{getAllDescription(data.description)}
-						<br/>
-						{getExtraInfo(data)}
+						<Container>
+							<Row>
+								<Col xs={3} sm={3}>
+									<Card.Title style={{ fontSize: '30px'}} className="fontStyleAdjust">{data.name}</Card.Title>
+									{getSourceInfo(data)}
+									<br/>
+									{getAllDescription(data.description)}
+									<br/>
+									{getExtraInfo(data)}
+								</Col>
+								<Col style={{marginLeft: '15%', textAlign:'center'}}>
+									{getAllScreenShot(data)}
+								</Col>
+							</Row>
+						</Container>
 					</Card.Body>
 					
 				</Card>

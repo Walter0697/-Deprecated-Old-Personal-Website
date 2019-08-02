@@ -9,6 +9,32 @@ import ConnectFour from '../sprite/projects/connectfour.png';
 import BunnySenet from '../sprite/projects/bunnysenet.png';
 import WalterCheng from '../sprite/projects/waltercheng.png';
 
+import BG003 from '../sprite/screenshot/bg003.gif';
+import BG002 from '../sprite/screenshot/bg002.png';
+import BG001 from '../sprite/screenshot/bg001.png';
+import MS001 from '../sprite/screenshot/ms001.png';
+import MS002 from '../sprite/screenshot/ms002.png';
+import MS003 from '../sprite/screenshot/ms003.gif';
+import IT001 from '../sprite/screenshot/it001.gif';
+import IT002 from '../sprite/screenshot/it002.png';
+import IT003 from '../sprite/screenshot/it003.gif';
+import VJ001 from '../sprite/screenshot/vj001.png';
+import VJ002 from '../sprite/screenshot/vj002.gif';
+import DD001 from '../sprite/screenshot/dd001.png';
+import DD002 from '../sprite/screenshot/dd002.png';
+import DD003 from '../sprite/screenshot/dd003.gif';
+import PR001 from '../sprite/screenshot/pr001.png';
+import PR002 from '../sprite/screenshot/pr002.png';
+import PR003 from '../sprite/screenshot/pr003.gif';
+import FG001 from '../sprite/screenshot/fg001.png';
+import CF001 from '../sprite/screenshot/cf001.png';
+import CF002 from '../sprite/screenshot/cf002.png';
+import CF003 from '../sprite/screenshot/cf003.gif';
+import BS001 from '../sprite/screenshot/bs001.png';
+import BS002 from '../sprite/screenshot/bs002.png';
+import BS003 from '../sprite/screenshot/bs003.gif';
+import WC001 from '../sprite/screenshot/wc001.gif';
+
 const ProjectImage = {	'ballgame.png'		: BallGame,
 						'dinder.png'		: Dinder,
 						'fly.png'			: Fly,
@@ -21,7 +47,39 @@ const ProjectImage = {	'ballgame.png'		: BallGame,
 						'waltercheng.png'	: WalterCheng, };
 
 
+const ScreenShotImage = {	'bg003.gif'		: BG003,
+							'bg002.png'		: BG002,
+							'bg001.png'		: BG001,	
+							'ms001.png'		: MS001,	
+							'ms002.png'		: MS002,	
+							'ms003.gif'		: MS003,	
+							'it001.gif'		: IT001,	
+							'it002.png'		: IT002,	
+							'it003.gif'		: IT003,	
+							'vj001.png'		: VJ001,
+							'vj002.gif'		: VJ002,
+							'dd001.png'		: DD001,
+							'dd002.png'		: DD002,
+							'dd003.gif'		: DD003,
+							'pr001.png'		: PR001,
+							'pr002.png'		: PR002,
+							'pr003.gif'		: PR003,
+							'fg001.png'		: FG001,
+							'cf001.png'		: CF001,
+							'cf002.png' 	: CF002,
+							'cf003.gif'		: CF003,
+							'bs001.png'		: BS001,
+							'bs002.png'		: BS002,
+							'bs003.gif'		: BS003,
+							'wc001.gif'		: WC001,
+							};
+						
 export function getProjectImage(name)
 {
 	return ProjectImage[name];
+}
+
+export function getScreenShot(name)
+{
+	return ScreenShotImage[name];
 }
