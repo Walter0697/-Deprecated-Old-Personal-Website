@@ -1,6 +1,8 @@
 ### Personal Website
 ##### Reworking personal website
 
+- ![](https://github.com/Walter0697/PersonalWebsite/blob/master/src/sprite/screenshot/wc001.gif)
+
 ## Technology:
 - react-native
 - react-spring animation library
