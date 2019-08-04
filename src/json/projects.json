@@ -121,6 +121,7 @@
 		"description":[	"Classic Connect Four game implemented in Unity",
 						"Created my own 3d model for this game",
 						"Using MiniMax Tree Search with Alpha-Beta pruning to optimize the efficiency."],
+		"download":{"Download here: ":"ConnectFour.zip"},
 		"screenshot":["cf003.gif", "cf001.png", "cf002.png"],
 		"type":"Games",
 		"index":"8"
@@ -134,6 +135,7 @@
 		"description":[	"Traditional Senet game implemented in Unity",
 						"Rules are according to https://www.cs.brandeis.edu/~storer/JimPuzzles/GAMES/Senet/Senet.pdf",
 						"It is just cute therefore I want to put it here"],
+		"download":{"Download here: ":"BunnySenet.zip"},
 		"screenshot":["bs003.gif", "bs001.png", "bs002.png"],
 		"type":"Games",
 		"index":"9"

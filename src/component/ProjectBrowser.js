@@ -16,12 +16,16 @@ import BallGameMac from '../downloadable/Ball-Game-mac.zip';
 import Imitator from '../downloadable/Imitator.zip';
 import ImitatorUn from '../downloadable/ImitatorUnlock.zip';
 import MusicShooter from '../downloadable/Music-Shooter.zip';
+import BunnySenet from '../downloadable/BunnySenet.zip';
+import ConnectFour from '../downloadable/ConnectFour.zip';
 
 const zipfile = { 	'Ball-Game-windows.zip'	: BallGame,
 					'Ball-Game-mac.zip'		: BallGameMac,
 					'Imitator.zip'			: Imitator,
 					'ImitatorUnlock.zip'	: ImitatorUn,
 					'Music-Shooter.zip'		: MusicShooter,
+					'ConnectFour.zip'		: ConnectFour,
+					'BunnySenet.zip'		: BunnySenet,
 				}
 
 function getIcon(data, size, color="svgicon") {
