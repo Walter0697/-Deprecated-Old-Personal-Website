@@ -159,10 +159,10 @@ function getOutputDiv(data)
 				<Card style={{ background: '#222222', color: 'white' }}>
 					<Container>
 						<Row>
-							<Col xs={5} sm={5}>
+							<Col xs={4} sm={4}>
 								<Card.Img style={{ marginTop: '10%', textAlign: 'left' }} variant="top" src={getProjectImage(data.image)} />
 							</Col>
-							<Col xs={7} sm={7}>
+							<Col xs={8} sm={8}>
 								<div style={{ marginTop: '10%', justifyContent: 'center', alignItems: 'center' }}>
 									<div style={{ display: 'block'}}>
 										Technologies used:
@@ -176,7 +176,7 @@ function getOutputDiv(data)
 					<Card.Body style={{ textAlign: 'left' }} >
 						<Container>
 							<Row>
-								<Col xs={3} sm={3}>
+								<Col xs={5} sm={5}>
 									<Card.Title style={{ fontSize: '30px'}} className="fontStyleAdjust">{data.name}</Card.Title>
 									{getSourceInfo(data)}
 									<br/>
@@ -184,7 +184,7 @@ function getOutputDiv(data)
 									<br/>
 									{getExtraInfo(data)}
 								</Col>
-								<Col style={{marginLeft: '15%', textAlign:'center'}}>
+								<Col xs={7} sm={7} style={{ textAlign:'center'}}>
 									{getAllScreenShot(data)}
 								</Col>
 							</Row>

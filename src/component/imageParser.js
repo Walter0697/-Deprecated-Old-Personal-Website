@@ -8,6 +8,7 @@ import VideoJuice from '../sprite/projects/videojuice.png';
 import ConnectFour from '../sprite/projects/connectfour.png';
 import BunnySenet from '../sprite/projects/bunnysenet.png';
 import WalterCheng from '../sprite/projects/waltercheng.png';
+import ScienceFiction from '../sprite/projects/sciencefiction.png';
 
 import BG003 from '../sprite/screenshot/bg003.gif';
 import BG002 from '../sprite/screenshot/bg002.png';
@@ -34,6 +35,9 @@ import BS001 from '../sprite/screenshot/bs001.png';
 import BS002 from '../sprite/screenshot/bs002.png';
 import BS003 from '../sprite/screenshot/bs003.gif';
 import WC001 from '../sprite/screenshot/wc001.gif';
+import SF001 from '../sprite/screenshot/sf001.jpg';
+import SF002 from '../sprite/screenshot/sf002.jpg';
+import SF003 from '../sprite/screenshot/sf003.jpg';
 
 const ProjectImage = {	'ballgame.png'		: BallGame,
 						'dinder.png'		: Dinder,
@@ -44,7 +48,8 @@ const ProjectImage = {	'ballgame.png'		: BallGame,
 						'videojuice.png'	: VideoJuice,
 						'connectfour.png'	: ConnectFour,
 						'bunnysenet.png'	: BunnySenet,
-						'waltercheng.png'	: WalterCheng, };
+						'waltercheng.png'	: WalterCheng, 
+						'sciencefiction.png': ScienceFiction,};
 
 
 const ScreenShotImage = {	'bg003.gif'		: BG003,
@@ -72,6 +77,9 @@ const ScreenShotImage = {	'bg003.gif'		: BG003,
 							'bs002.png'		: BS002,
 							'bs003.gif'		: BS003,
 							'wc001.gif'		: WC001,
+							'sf001.jpg'		: SF001,
+							'sf002.jpg'		: SF002,
+							'sf003.jpg'		: SF003,
 							};
 						
 export function getProjectImage(name)

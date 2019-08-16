@@ -152,6 +152,19 @@
 		"screenshot":["wc001.gif"],				
 		"type":"Webs",
 		"index":"10"
+	},
+	{
+		"name":"Sci-fi style image filtering",
+		"short":"science-fiction",
+		"image":"sciencefiction.png",
+		"github":"https://github.com/Walter0697/Science-Fiction-Style-Image-Filtering",
+		"technology":["C++", "Visual Studio", "OpenCV"],
+		"description": ["Honours Project at Carleton University",
+						"Supervisor: Prof David Mould",
+						"A filtering algorithm for generating a science-fiction style image"],
+		"screenshot":["sf001.jpg", "sf002.jpg", "sf003.jpg"],
+		"type":"Image",
+		"index":"11"
 	}
 	]
 }
