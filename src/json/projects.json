@@ -33,7 +33,7 @@
 		"type":"Mobile",
 		"screenshot":["dd003.gif", "dd001.png", "dd002.png"],
 		"variation":[	{"condition":  "month",
-						 "value"    :  8,
+						 "value"    :  12,
 						 "target"	:  "image",
 						 "modify"	:  "dinder_xmas.png"}],
 		"group":"Yes",
