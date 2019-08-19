@@ -49,7 +49,7 @@ export default class Projects extends React.Component {
 		{
 			if (round - 2 === i)
 			{
-				divs.push(<img style={{ marginLeft: '20%', position: 'fixed', width: '5%', opacity: '0.1'}} src={getProjectImage(this.state.data[i].image)} onClick={()=>{ this.scrollNext(-2) }} key={i} alt=""/> );
+				divs.push(<img style={{ marginLeft: '20%', position: 'fixed', width: '5%', opacity: '0.1'}} src={getProjectImage(this.state.data[i].image, this.state.data[i].variation)} onClick={()=>{ this.scrollNext(-2) }} key={i} alt=""/> );
 			}
 			else if (round - 1 === i)
 			{
@@ -64,7 +64,7 @@ export default class Projects extends React.Component {
 					gap = 0.3 - 0.1;
 					opac -= diff * gap;
 				}
-				divs.push(<img style={{ marginLeft: left + "%", position: 'fixed', width: wid + "%", opacity: opac + ""}} src={getProjectImage(this.state.data[i].image)} onClick={()=>{ this.scrollNext(-1) }} key={i} alt=""/> );
+				divs.push(<img style={{ marginLeft: left + "%", position: 'fixed', width: wid + "%", opacity: opac + ""}} src={getProjectImage(this.state.data[i].image, this.state.data[i].variation)} onClick={()=>{ this.scrollNext(-1) }} key={i} alt=""/> );
 			}
 			else if (round === i)
 			{
@@ -80,7 +80,7 @@ export default class Projects extends React.Component {
 					opac -= diff * gap;
 				}
 			
-				divs.push(<img style={{ marginLeft: left + "%", position: 'fixed', width: wid + "%", opacity: opac + ""}} src={getProjectImage(this.state.data[i].image)} key={i} alt=""/> );
+				divs.push(<img style={{ marginLeft: left + "%", position: 'fixed', width: wid + "%", opacity: opac + ""}} src={getProjectImage(this.state.data[i].image, this.state.data[i].variation)} key={i} alt=""/> );
 			}
 			else if (round + 1 === i)
 			{
@@ -95,7 +95,7 @@ export default class Projects extends React.Component {
 					gap = 0.3 - 1;
 					opac -= diff * gap;
 				}
-				divs.push(<img style={{ marginLeft: left + "%", position: 'fixed', width: wid + "%", opacity: opac + ""}} src={getProjectImage(this.state.data[i].image)} onClick={()=>{ this.scrollNext(1) }} key={i} alt=""/> );
+				divs.push(<img style={{ marginLeft: left + "%", position: 'fixed', width: wid + "%", opacity: opac + ""}} src={getProjectImage(this.state.data[i].image, this.state.data[i].variation)} onClick={()=>{ this.scrollNext(1) }} key={i} alt=""/> );
 			}
 			else if (round + 2 === i)  
 			{
@@ -110,7 +110,7 @@ export default class Projects extends React.Component {
 					gap = 0.1 - 0.3;
 					opac -= diff * gap;
 				}
-				divs.push(<img style={{ marginLeft: left + "%", position: 'fixed', width: wid + "%", opacity: opac + ""}} src={getProjectImage(this.state.data[i].image)} onClick={()=>{ this.scrollNext(2) }} key={i} alt=""/> );
+				divs.push(<img style={{ marginLeft: left + "%", position: 'fixed', width: wid + "%", opacity: opac + ""}} src={getProjectImage(this.state.data[i].image, this.state.data[i].variation)} onClick={()=>{ this.scrollNext(2) }} key={i} alt=""/> );
 			}
 		} 
 		return divs;

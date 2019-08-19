@@ -32,6 +32,10 @@
 		"download":{"Download here: ":"https://play.google.com/store/apps/details?id=com.team206255.dineder"},
 		"type":"Mobile",
 		"screenshot":["dd003.gif", "dd001.png", "dd002.png"],
+		"variation":[	{"condition":  "month",
+						 "value"    :  8,
+						 "target"	:  "image",
+						 "modify"	:  "dinder_xmas.png"}],
 		"group":"Yes",
 		"index":"5"
 	},

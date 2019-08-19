@@ -1,5 +1,6 @@
 import BallGame from '../sprite/projects/ballgame.png';
 import Dinder from '../sprite/projects/dinder.png';
+import DinderX from '../sprite/projects/dinder_xmas.png';
 import Fly from '../sprite/projects/fly.png';
 import Imitator from '../sprite/projects/imitator.png';
 import MusicShooter from '../sprite/projects/musicshooter.png';
@@ -41,6 +42,7 @@ import SF003 from '../sprite/screenshot/sf003.jpg';
 
 const ProjectImage = {	'ballgame.png'		: BallGame,
 						'dinder.png'		: Dinder,
+						'dinder_xmas.png'	: DinderX,
 						'fly.png'			: Fly,
 						'imitator.png'		: Imitator,
 						'musicshooter.png'	: MusicShooter,
@@ -81,9 +83,35 @@ const ScreenShotImage = {	'bg003.gif'		: BG003,
 							'sf002.jpg'		: SF002,
 							'sf003.jpg'		: SF003,
 							};
-						
-export function getProjectImage(name)
+			
+var date = new Date();
+			
+export function getProjectImage(name, variation)
 {
+	if (variation)
+	{
+		for (var i = 0; i < variation.length; i++)
+		{
+			if (variation[i].target === "image")
+			{
+				if (variation[i].condition === "month")
+				{
+					if (date.getMonth() + 1 === variation[i].value)
+					{
+					
+						return ProjectImage[variation[i].modify];
+					}
+				}
+				else if (variation[i].condition === "date")
+				{
+					if (date.getDate() == variation[i].value2 && date.getMonth() + 1 === variation[i].value)
+					{
+						return ProjectImage[variation[i].modify];
+					}
+				}
+			}
+		}
+	}
 	return ProjectImage[name];
 }
 

@@ -160,7 +160,7 @@ function getOutputDiv(data)
 					<Container>
 						<Row>
 							<Col xs={4} sm={4}>
-								<Card.Img style={{ marginTop: '10%', textAlign: 'left' }} variant="top" src={getProjectImage(data.image)} />
+								<Card.Img style={{ marginTop: '10%', textAlign: 'left' }} variant="top" src={getProjectImage(data.image, data.variation)} />
 							</Col>
 							<Col xs={8} sm={8}>
 								<div style={{ marginTop: '10%', justifyContent: 'center', alignItems: 'center' }}>

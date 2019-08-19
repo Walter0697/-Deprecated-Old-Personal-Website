@@ -23,7 +23,7 @@ export default class MobileProjectPage extends React.Component {
 			files.push({ sorting: key })
 			for (i = 0; i < tempnum[key]; i++)
 			{
-				files.push({ sorting: "none", imgsource: tempdata[curr].image, github: tempdata[curr].github, index: curr });
+				files.push({ sorting: "none", imgsource: tempdata[curr].image, github: tempdata[curr].github, variation: tempdata[curr].variation, index: curr });
 				curr++;
 			}
 		}
@@ -67,7 +67,7 @@ export default class MobileProjectPage extends React.Component {
 			files.push({ sorting: key })
 			for (i = 0; i < tempnum[key]; i++)
 			{
-				files.push({ sorting: "none", imgsource: tempdata[curr].image, github: tempdata[curr].github, index: curr });
+				files.push({ sorting: "none", imgsource: tempdata[curr].image, github: tempdata[curr].github, variation: tempdata[curr].variation, index: curr });
 				curr++;
 			}
 		}
@@ -142,7 +142,7 @@ export default class MobileProjectPage extends React.Component {
 									<img
 										className="image"
 										key={data.index}
-										src={getProjectImage(data.imgsource)}
+										src={getProjectImage(data.imgsource, data.variation)}
 										alt={data.index}
 										onClick={() => { this.openInfo(data.index); }}
 										style={{
