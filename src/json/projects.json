@@ -153,7 +153,12 @@
 		"description":[	"A website that shows most of my projects and experiences",
 						"way to study more technologies, using multiple animation libraries",
 						"Will keep updating!"],
-		"screenshot":["wc001.gif"],				
+		"screenshot":["wc001.gif"],
+		"variation":[	{"condition":  "date",
+					 "value"    :  6,
+					 "value2"	:  21,
+					 "target"	:  "image",
+					 "modify"	:  "walterbday.png"}],
 		"type":"Webs",
 		"index":"10"
 	},

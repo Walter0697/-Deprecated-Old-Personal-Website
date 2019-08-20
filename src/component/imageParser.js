@@ -9,6 +9,7 @@ import VideoJuice from '../sprite/projects/videojuice.png';
 import ConnectFour from '../sprite/projects/connectfour.png';
 import BunnySenet from '../sprite/projects/bunnysenet.png';
 import WalterCheng from '../sprite/projects/waltercheng.png';
+import WalterBday from '../sprite/projects/walterbday.png';
 import ScienceFiction from '../sprite/projects/sciencefiction.png';
 
 import BG003 from '../sprite/screenshot/bg003.gif';
@@ -51,6 +52,7 @@ const ProjectImage = {	'ballgame.png'		: BallGame,
 						'connectfour.png'	: ConnectFour,
 						'bunnysenet.png'	: BunnySenet,
 						'waltercheng.png'	: WalterCheng, 
+						'walterbday.png'	: WalterBday,
 						'sciencefiction.png': ScienceFiction,};
 
 
