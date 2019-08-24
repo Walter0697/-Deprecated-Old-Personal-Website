@@ -106,7 +106,7 @@ export function getProjectImage(name, variation)
 				}
 				else if (variation[i].condition === "date")
 				{
-					if (date.getDate() == variation[i].value2 && date.getMonth() + 1 === variation[i].value)
+					if (date.getDate() === variation[i].value2 && date.getMonth() + 1 === variation[i].value)
 					{
 						return ProjectImage[variation[i].modify];
 					}
