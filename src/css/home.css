@@ -12,6 +12,12 @@
 	z-index: 10;
 }
 
+.bottomText {
+	font-family: 'Righteous', cursive;
+	font-size: 10px;
+	color: white;
+}
+
 .bottomMobileText {
 	font-family: 'Righteous', cursive;
 	font-size: 30px;
@@ -53,6 +59,10 @@
 .ontop {
 	margin-top: 0%;
 	margin-bottom: 180%;
+}
+
+.clickable {
+	cursor: pointer;
 }
 
 a{

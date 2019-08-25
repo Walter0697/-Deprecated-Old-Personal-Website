@@ -342,13 +342,7 @@ export default class HomePage extends React.Component {
 						<ReactTooltip />
 					</ParallaxLayer>
 					
-					<ParallaxLayer
-						note={"CONTACT ME"}
-						offset={2.25}
-						speed={0.0}
-						style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
-							<div className="bottomMobileText">CONTACT ME!</div>
-					</ParallaxLayer>
+					
 					<ParallaxLayer
 						note={"not every devices can see the topbar, so contact list here"}
 						offset={2.0}
@@ -360,7 +354,23 @@ export default class HomePage extends React.Component {
 								 <a data-tip="walterpakwai@live.com" href="mailto:walterpakwai@live.com"><i className="fas fa-envelope-square"/><ReactTooltip /> </a>
 								 <a data-tip="+1(343)777-8008" href="/#"><i className="fas fa-phone-square"/><ReactTooltip /> </a></div>
 					</ParallaxLayer>
+					<ParallaxLayer
+						note={"CONTACT ME"}
+						offset={2.25}
+						speed={0.0}
+						style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
+							<div className="bottomMobileText">CONTACT ME!</div>
+					</ParallaxLayer>
 					
+					<ParallaxLayer
+					note={"site map"}
+					offset={2.35}
+					speed={0.0}
+					onClick={this.redirectOut.bind(this, '/sitemap')}
+					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
+						<div className="bottomText">site map</div>
+				</ParallaxLayer>
+				
 					<ParallaxLayer 
 						note={"drawing the bottom footer"}
 						offset={2.5} speed={-0.2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
@@ -552,12 +562,14 @@ export default class HomePage extends React.Component {
 				</ParallaxLayer>
 				
 				<ParallaxLayer
+					className="clickable"
 					offset={1.4}
 					speed={0.2}
 					style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '50%', marginLeft: '25%'}}
 					onClick={this.redirectOut.bind(this, "/projects")}>
 				</ParallaxLayer>
 				<ParallaxLayer
+					className="clickable"
 					offset={1.8}
 					speed={0.2}
 					style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40%', marginLeft: '45%'}}
@@ -566,26 +578,28 @@ export default class HomePage extends React.Component {
 					<ReactTooltip />
 				</ParallaxLayer>
 				<ParallaxLayer
+					className="clickable"
 					offset={2.2}
 					speed={0.2}
 					style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '50%', marginLeft: '25%'}}
 					onClick={this.redirectOut.bind(this, "/numbers")}>
 				</ParallaxLayer>
 				<ParallaxLayer
+					className="clickable"
 					offset={1.8}
 					speed={0.2}
 					style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '23%', marginLeft: '8%' }}
 					onClick={this.redirectOut.bind(this, '/static/waltercheng.pdf')}
 					data-tip="Click to view!">
 				</ParallaxLayer>
-				
 				<ParallaxLayer
-					note={"CONTACT ME"}
-					offset={3.3}
-					speed={0.0}
-					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
-						<div className="bottomMobileText">CONTACT ME!</div>
+					className="clickable"
+					offset={2.8}
+					speed={0.2}
+					style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '50%', marginLeft: '25%'}}
+					onClick={this.redirectOut.bind(this, "/login")}>
 				</ParallaxLayer>
+				
 				<ParallaxLayer
 					note={"not every devices can see the topbar, so contact list here"}
 					offset={3.0}
@@ -596,6 +610,23 @@ export default class HomePage extends React.Component {
 							 <a data-tip="Walter0697" href="https://github.com/Walter0697"><i className="fab fa-github-square"/><ReactTooltip /> </a>
 							 <a data-tip="walterpakwai@live.com" href="mailto:walterpakwai@live.com"><i className="fas fa-envelope-square"/><ReactTooltip /> </a>
 							 <a data-tip="+1(343)777-8008" href="/#"><i className="fas fa-phone-square"/><ReactTooltip /> </a></div>
+				</ParallaxLayer>
+				
+				<ParallaxLayer
+					note={"CONTACT ME"}
+					offset={3.05}
+					speed={0.0}
+					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
+						<div className="bottomMobileText">CONTACT ME!</div>
+				</ParallaxLayer>
+				
+				<ParallaxLayer
+					note={"site map"}
+					offset={3.15}
+					speed={0.0}
+					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} 
+					onClick={this.redirectOut.bind(this, '/sitemap')}>
+						<div className="bottomText">site map</div>
 				</ParallaxLayer>
 				
 				<ParallaxLayer 
