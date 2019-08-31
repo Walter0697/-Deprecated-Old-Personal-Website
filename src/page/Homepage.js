@@ -354,20 +354,13 @@ export default class HomePage extends React.Component {
 								 <a data-tip="walterpakwai@live.com" href="mailto:walterpakwai@live.com"><i className="fas fa-envelope-square"/><ReactTooltip /> </a>
 								 <a data-tip="+1(343)777-8008" href="/#"><i className="fas fa-phone-square"/><ReactTooltip /> </a></div>
 					</ParallaxLayer>
-					<ParallaxLayer
-						note={"CONTACT ME"}
-						offset={2.25}
-						speed={0.0}
-						style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
-							<div className="bottomMobileText">CONTACT ME!</div>
-					</ParallaxLayer>
 					
 					<ParallaxLayer
 					note={"site map"}
-					offset={2.35}
+					offset={2.75}
 					speed={0.0}
 					onClick={this.redirectOut.bind(this, '/sitemap')}
-					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
+					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}}  >
 						<div className="bottomText">site map</div>
 				</ParallaxLayer>
 				
@@ -609,25 +602,19 @@ export default class HomePage extends React.Component {
 							 <a data-tip="Walter Cheng" href="https://www.linkedin.com/in/wai-walter-cheng/"><i className="fab fa-linkedin"/><ReactTooltip /> </a>
 							 <a data-tip="Walter0697" href="https://github.com/Walter0697"><i className="fab fa-github-square"/><ReactTooltip /> </a>
 							 <a data-tip="walterpakwai@live.com" href="mailto:walterpakwai@live.com"><i className="fas fa-envelope-square"/><ReactTooltip /> </a>
-							 <a data-tip="+1(343)777-8008" href="/#"><i className="fas fa-phone-square"/><ReactTooltip /> </a></div>
-				</ParallaxLayer>
-				
-				<ParallaxLayer
-					note={"CONTACT ME"}
-					offset={3.05}
-					speed={0.0}
-					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
-						<div className="bottomMobileText">CONTACT ME!</div>
+							 <a data-tip="+1(343)777-8008" href="/#"><i className="fas fa-phone-square"/><ReactTooltip /> </a>
+						</div>
 				</ParallaxLayer>
 				
 				<ParallaxLayer
 					note={"site map"}
-					offset={3.15}
+					offset={3.7}
 					speed={0.0}
-					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}} 
-					onClick={this.redirectOut.bind(this, '/sitemap')}>
-						<div className="bottomText">site map</div>
+					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}} 
+					>
+						<div className="bottomText" onClick={this.redirectOut.bind(this, '/sitemap')}>site map</div>
 				</ParallaxLayer>
+				
 				
 				<ParallaxLayer 
 					note={"drawing the bottom footer"}
