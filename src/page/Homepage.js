@@ -359,10 +359,12 @@ export default class HomePage extends React.Component {
 					note={"site map"}
 					offset={2.75}
 					speed={0.0}
-					onClick={this.redirectOut.bind(this, '/sitemap')}
-					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}}  >
-						<div className="bottomText">site map</div>
-				</ParallaxLayer>
+					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}} 
+					>
+						<div className="bottomText">
+						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.23 </a>
+						</div>
+					</ParallaxLayer>
 				
 					<ParallaxLayer 
 						note={"drawing the bottom footer"}
@@ -607,12 +609,14 @@ export default class HomePage extends React.Component {
 				</ParallaxLayer>
 				
 				<ParallaxLayer
-					note={"site map"}
+					note={"bottom text"}
 					offset={3.7}
 					speed={0.0}
 					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}} 
 					>
-						<div className="bottomText" onClick={this.redirectOut.bind(this, '/sitemap')}>site map</div>
+						<div className="bottomText">
+						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.23 </a>
+						</div>
 				</ParallaxLayer>
 				
 				
