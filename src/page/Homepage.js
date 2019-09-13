@@ -362,7 +362,7 @@ export default class HomePage extends React.Component {
 					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}} 
 					>
 						<div className="bottomText">
-						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.23 </a>
+						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.24 </a>
 						</div>
 					</ParallaxLayer>
 				
@@ -615,7 +615,7 @@ export default class HomePage extends React.Component {
 					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}} 
 					>
 						<div className="bottomText">
-						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.23 </a>
+						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.24 </a>
 						</div>
 				</ParallaxLayer>
 				
