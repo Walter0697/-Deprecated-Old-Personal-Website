@@ -33,9 +33,31 @@ export default class Projects extends React.Component {
 			
 			canScroll: true,						//save position when open info
 			lastScrollPos: 0,
-			finalWindowY: -1,			
+			finalWindowY: -1,	
+
+			autolock: false,		
 		};
 		this.handleScroll = this.handleScroll.bind(this);
+	}
+
+	checkAutoLock() {
+		if (this.state.autolock)
+		{
+			setTimeout(
+				function() {
+					if (this.state.autolock)
+					{
+						this.scrollNext(0);
+					}
+				}.bind(this), 200
+			) 
+		}
+		setTimeout(
+			function() {
+				this.checkAutoLock();
+			}.bind(this), 500	//check it every 30 ticks?
+		);
+		this.setState({autolock: true});
 	}
 	
 	getProjectDiv() {
@@ -161,6 +183,7 @@ export default class Projects extends React.Component {
 			this.setState({ sortButtonMargin: "70%" });
 		window.addEventListener('scroll', this.handleScroll, true);
 		this.scrollTo(0);
+		this.checkAutoLock();
 	}
 	
 	componentWillUnmount() {
@@ -184,7 +207,11 @@ export default class Projects extends React.Component {
 	}
 	
 	handleScroll(event){
-		this.setState({ scrolling: window.scrollY * 100 / this.state.max });
+		var previous = this.state.scrolling;
+		this.setState({ scrolling: window.scrollY * 100 / this.state.max});
+		if (previous !== this.state.scrolling)
+			this.setState({ autolock: false });
+
 		if (this.state.scrolling > 100) {
 			this.setState({ scrolling: 100, max: window.scrollY });
 		}

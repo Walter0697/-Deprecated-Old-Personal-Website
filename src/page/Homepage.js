@@ -361,7 +361,7 @@ export default class HomePage extends React.Component {
 					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}} 
 					>
 						<div className="bottomText">
-						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.24 </a>
+						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.25 </a>
 						</div>
 					</ParallaxLayer>
 				
@@ -545,10 +545,10 @@ export default class HomePage extends React.Component {
 					speed={-1.0}
 					className={"buttonFont"}
 					style={{ display: 'block', alignItems: 'center', justifyContent: 'center', opacity: this.state.buttonAlpha}}>
-					<div onClick={this.scrollToRef.bind(this, 0.0)}><u>WALTER CHENG</u></div>
-					<div onClick={this.scrollToRef.bind(this, 1.1)}>PROJECTS</div>
-					<div onClick={this.scrollToRef.bind(this, 1.6)}>RESUME</div>
-					<div onClick={this.scrollToRef.bind(this, 2.1)}>STATUS</div>
+					<div className="clickable" onClick={this.scrollToRef.bind(this, 0.0)}><u>WALTER CHENG</u></div>
+					<div className="clickable" onClick={this.scrollToRef.bind(this, 1.1)}>PROJECTS</div>
+					<div className="clickable" onClick={this.scrollToRef.bind(this, 1.6)}>RESUME</div>
+					<div className="clickable" onClick={this.scrollToRef.bind(this, 2.1)}>STATUS</div>
 					<div><a data-tip="Walter Cheng" href="https://www.linkedin.com/in/wai-walter-cheng/"><i className="fab fa-linkedin"/><ReactTooltip /> </a>
 						 <a data-tip="Walter0697" href="https://github.com/Walter0697"><i className="fab fa-github-square"/><ReactTooltip /> </a>
 						 <a data-tip="walterpakwai@live.com" href="mailto:walterpakwai@live.com"><i className="fas fa-envelope-square"/><ReactTooltip /> </a>
@@ -613,7 +613,7 @@ export default class HomePage extends React.Component {
 					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}} 
 					>
 						<div className="bottomText">
-						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.24 </a>
+						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.25 </a>
 						</div>
 				</ParallaxLayer>
 				
