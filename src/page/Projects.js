@@ -33,9 +33,7 @@ export default class Projects extends React.Component {
 			
 			canScroll: true,						//save position when open info
 			lastScrollPos: 0,
-			finalWindowY: -1,	
-
-			autolock: false,		
+			finalWindowY: -1,			
 		};
 		this.handleScroll = this.handleScroll.bind(this);
 	}
@@ -183,7 +181,7 @@ export default class Projects extends React.Component {
 			this.setState({ sortButtonMargin: "70%" });
 		window.addEventListener('scroll', this.handleScroll, true);
 		this.scrollTo(0);
-		this.checkAutoLock();
+		//this.checkAutoLock();
 	}
 	
 	componentWillUnmount() {
