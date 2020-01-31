@@ -8,7 +8,6 @@ import '../css/home.css';
 
 //get all the images
 import avator from '../sprite/homepage/avator.svg';
-import bottomBackground from '../sprite/homepage/background.png';
 
 import frontHouse from '../sprite/homepage/fronthouse.png';
 import backHouse from '../sprite/homepage/backhouse.png';
@@ -361,15 +360,10 @@ export default class HomePage extends React.Component {
 					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}} 
 					>
 						<div className="bottomText">
-						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.25 </a>
+						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.26 </a>
 						</div>
 					</ParallaxLayer>
 				
-					<ParallaxLayer 
-						note={"drawing the bottom footer"}
-						offset={2.5} speed={-0.2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-						<img src={bottomBackground} style={{ width: '100%' }} alt="" />
-					</ParallaxLayer>
 				</Parallax>
 			</div>
 			)
@@ -613,16 +607,10 @@ export default class HomePage extends React.Component {
 					style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10%'}} 
 					>
 						<div className="bottomText">
-						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.25 </a>
+						<a onClick={this.redirectOut.bind(this, '/sitemap')} href="/#">site map</a> <a  href="/#"> | made with <i className="fas fa-heart"></i> and <i className="fab fa-react"></i> React.js </a> <a  href="/#"> | version 1.0.26 </a>
 						</div>
 				</ParallaxLayer>
 				
-				
-				<ParallaxLayer 
-					note={"drawing the bottom footer"}
-					offset={3.5} speed={-0.6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-					<img src={bottomBackground} style={{ width: '100%' }} alt="" />
-				</ParallaxLayer>
 			</Parallax>
 			)
 		}

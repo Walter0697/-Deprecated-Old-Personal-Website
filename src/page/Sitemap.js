@@ -42,7 +42,7 @@ export default class Sitemap extends React.Component {
 			<div style={{ marginLeft: '2%', marginTop: '2%'}}>
 				<div onClick={()=>{window.location = "/";}}>Homepage</div>
 				<div style={{display: "block"}}>{mobileDifferent("Project Page", "/projects", "m_projects")}</div>
-				<div onClick={()=>{window.location = "http://www.waltercheng.com:3000/#resume";}}>Resume Page(still in my old website)</div>
+				<div onClick={()=>{window.location = "/work";}}>Working Experience</div>
 				<div onClick={()=>{window.location = "/numbers";}}>Number Page</div>
 				<div onClick={()=>{window.location = "/NOJJKT";}}>Lock</div>
 			</div>
